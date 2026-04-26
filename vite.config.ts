@@ -3,17 +3,6 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/FunFactory/", // ⚠️ MUST match repo name EXACTLY
-
+  base: "/FunFactory/", // ✅ HARD CODE THIS
   plugins: [react(), tailwindcss()],
-
-  resolve: {
-    alias: {
-      "@": "/src",
-    },
-  },
-
-  build: {
-    outDir: "dist",
-  },
 });
